@@ -1,0 +1,157 @@
+.cheer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gift-box {
+    font-size: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .gift-box.opened {
+    transform: scale(1.2) rotate(20deg);
+  }
+  
+  .flowers-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .flower {
+    position: absolute;
+    font-size: 30px;
+    animation: fall 4s linear infinite;
+  }
+
+  .flower-animation {
+    position: absolute;
+    top: -10%;
+    left: -30%; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; 
+  }
+
+  .big-flower {
+    font-size: 150px; 
+    animation: appear 2s forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      transform: translateX(-100%) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .text-container {
+    margin-top: 20px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-shadow:
+      -1px -1px 0 #ffffff,
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff;
+  }
+
+  .surprise-image {
+    width: 300px; 
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .click-me-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+    margin-top: 10px; 
+    margin-left: 18px;
+  }
+
+  .final-message {
+    font-family: 'Cursive';
+    font-size: 80px;
+    font-weight: 80px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .text-line {
+    margin: 5px 0;
+  }
+  
+  .cup-icon {
+    font-size: 150px;
+  }
+  
+  .final-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .encouragement-message {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .mint {
+    font-size: 40px; 
+    position: absolute;
+    top: -50px;
+    animation: fall 3s infinite;
+    border-radius: 50%; 
+    background-color: #a3d9a5; 
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes fall {
+    0% {
+      top: -50px;
+      opacity: 1;
+    }
+    100% {
+      top: 100vh;
+      opacity: 0;
+    }
+  }

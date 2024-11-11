@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+// import CatAnimation from './my-animations/CatAnimations';
+// import Racoon from './my-animations/Racoon';
+// import CanvasAnimation from './my-animations/CanvasAnimation';
+// import Cheer from './my-animations/Cheer';
+// import ProductDetails from './my-animations/ProductDetails';
+import EstateWebsite from './my-animations/RealEsWeb/EstateWebsite';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      {/* <Cheer /> */}
+      {/* <CanvasAnimation /> */}
+      {/* <Racoon /> */}
+      {/* <CatAnimation /> */}
+      {/* <ProductDetails /> */}
+      <EstateWebsite/>
     </div>
   );
 }
 
 export default App;
+

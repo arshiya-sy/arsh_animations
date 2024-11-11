@@ -1,0 +1,68 @@
+.black-cat-container {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    top: 150px;
+  }
+  
+  .black-cat-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .light-bulb {
+    position: absolute;
+    top: 2px;
+    right: 600px;
+    background: none; 
+    border: none;
+    padding: 0;
+    transition: background-color 0.5s ease;
+  }
+
+  .light-bulb-image {
+    width: 55px;
+    height: 90px;  
+    transform: rotate(180deg);
+  }
+  
+  .cat-eye-left,
+  .cat-eye-right {
+    position: absolute;
+    top: 80px;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(110, 183, 209, 0.8) 20%, #99c6e9 50%);
+    border-radius: 50%;
+   }
+
+   .cat-eye-left {
+    left: 147px; 
+   }
+
+   .cat-eye-right {
+    left: 170px; 
+   }
+
+   .light-on {
+    background-color: black; 
+  }
+  
+  .light-off {
+    background-color: pink; 
+  }
+
+  body {
+    background-color: pink;
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dark-mode {
+    background-color: black; 
+  }
